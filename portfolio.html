@@ -33,25 +33,50 @@
     <div class="container">
       <div class="port-card-container">
         <div class="card">
-         <h3>JoinCoin</h3>
+          <div class="card-text">
+            <h3><a href="https://joincoin.herokuapp.com/coins">JoinCoin</a></h3>
+          </div>
+          <div class="card-bg" style="background-image: url(joincoin.jpg);"></div>
         </div>
         <div class="card">
-          <h3>Equilibrium</h3>
+          <div class="card-text">
+            <h3><a href="https://nathanmiller9.github.io/project1/">Mixtape</a></h3>
+          </div>
+          <div class="card-bg" style="background-image: url(mixtape.jpg);"></div>
         </div>
         <div class="card">
-          <h3>Mixtape</h3>
+          <div class="card-text">
+            <h3><a href="https://equilibrium-game.herokuapp.com/">Equilibrium</a></h3>
+          </div>
+          <div class="card-bg" style="background-image: url(equilibrium.jpg);"></div>
         </div>
         <div class="card">
-          <h3>Brazen Impudence</h3>
+          <div class="card-text">
+            <h3><a href="http://lagraduates.org">LA Graduates</a></h3>
+          </div>
+          <div class="card-bg" style="background-image: url(mcge.jpg);"></div>
         </div>
         <div class="card">
-          <h3>LA Graduates</h3>
+          <div class="card-text">
+            <h3>Brazen Impudence</h3>
+            <p>Coming Soon</p>
+          </div>
+          <div class="card-bg" style="background-image: url(bi.jpg);"></div>
         </div>
         <div class="card">
-          <h3>Peer Action 4 Change</h3>
+          <div class="card-text">
+            <h3><a href="https://peeraction4change.org"
+          >Peer Action 4 Change</a>
+            </h3>
+          </div>
+          <div class="card-bg" style="background-image: url(pa4c.jpg);"></div>
         </div>
         <div class="card">
-          <h3>Crypto2Caviar</h3>
+          <div class="card-text">
+            <h3>Crypto2Caviar</h3>
+            <p>Coming Soon</p>
+          </div>
+          <div class="card-bg" style="background-image: url(c2c.jpg);"></div>
         </div>
       </div>
     </div>
@@ -66,5 +91,28 @@
       <li><a href="terms.html">Terms</a></li>
     </ul>
   </footer>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script>
+    $( document ).ready(function() {
+      $(".card").hover(
+        function() {
+          $(this).children(".card-text").show();
+          $(this).css({
+            "background": "#4A90E2"
+          });
+        },
+        function() {
+          $(this).children(".card-text").hide();
+          $(this).css({
+            "background": "none"
+          });
+        }
+      );
+    });
+  </script>
 </body>
 </html>

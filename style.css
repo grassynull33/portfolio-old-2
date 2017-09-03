@@ -68,6 +68,7 @@ header {
   font-style: italic;
   padding-top: 5px;
   font-size: 16px;
+  opacity: 0.6;
 }
 
 .header-top {
@@ -97,7 +98,11 @@ header {
 
 .nav-links {
   font-weight: 400;
-  opacity: 0.7;
+  opacity: 0.5;
+}
+
+.nav-links:hover, .nav-links:active, .nav-links:focus {
+  opacity: 1;
 }
 
 .btn {
@@ -112,13 +117,17 @@ header {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 12px;
-  background: #ff00cc;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f46b45;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   padding: 10px 14px;
   border-radius: 4px;
   /*opacity: 0.5;*/
+}
+
+.btn-free:hover, .btn-free:active, .btn-free:focus {
+  opacity: 0.8;
 }
 
 .container {
@@ -198,7 +207,7 @@ header {
   background: #87D37C;
 }
 
-.block-solution h3 {
+.solution-sub-header {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -247,6 +256,10 @@ header {
   display: flex;
 }
 
+.block-port-serv p {
+  opacity: 0.7;
+}
+
 .block-section {
   flex: 1;
   padding: 0 30px;
@@ -269,17 +282,21 @@ header {
 .btn-port-serv {
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-size: 12px;
-  background: #ff00cc;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 16px;
+  background: #f46b45;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  padding: 10px 14px;
+  padding: 14px 18px;
   border-radius: 4px;
   /*opacity: 0.5;*/
   display: block;
   width: fit-content;
   margin: 0 auto;
+}
+
+.btn-port-serv:hover, .btn-port-serv:active, .btn-port-serv:focus {
+  opacity: 0.8;
 }
 
 .block-free {
@@ -353,6 +370,10 @@ header {
   font-family: 'Open Sans', sans-serif;
 }
 
+.btn-consult:hover, .btn-consult:active, .btn-consult:focus {
+  background: #abe0a3;
+}
+
 .btn-no {
   margin-left: 20px;
 }
@@ -362,8 +383,9 @@ header {
 }
 
 .block-bonus h3 {
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
+  font-weight: 600;
 }
 
 footer {
@@ -534,24 +556,55 @@ footer ul li:not(:last-child) {
   min-width: 30%;
   /*max-width: 320px;*/
   width: 30%;
-  min-height: 150px;
+  min-height: 210px;
   text-align: center;
   /*border-radius: 4px;*/
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
-  padding: 30px;
+  /*padding: 30px;*/
   margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  -webkit-transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -moz-transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -o-transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -ms-transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  flex-direction: column;
 }
 
 .block-portfolio .card h3 {
   text-transform: uppercase;
-  margin-bottom: 12px;
+  font-size: 24px;
+  color: #C9E2FF;
+  /*margin-bottom: 12px;*/
   /*margin-top: 20px;*/
+  -webkit-transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -moz-transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -o-transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -ms-transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.card-text {
+  display: none;
+  padding: 20px;
+}
+
+.card-bg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .block-portfolio .card p {
   opacity: 0.7;
+  margin-top: 12px;
+  color: #C9E2FF;
 }
 
 .block-serv {
@@ -741,6 +794,15 @@ footer ul li:not(:last-child) {
 
 .free-submit-btn:hover, .free-submit-btn:active, .free-submit-btn:focus {
   cursor: pointer;
+  background: #abe0a3;
+}
+
+.contact-icon {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
 }
 
 .contact-message {

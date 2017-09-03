@@ -12,7 +12,7 @@
     <div class="header-top">
       <h1 class="brand"><a href="index.html">Yoon</a></h1>
       <p class="brand-sub">creator of websites</p>
-      <a class="btn btn-free" href="free.html">Free Consultation</a>
+      <a class="btn btn-free" href="free.html">Contact / Free Consultation</a>
     </div>
     <nav class="header-bot">
       <ul>
@@ -57,7 +57,7 @@
     <div class="container">
       <h2>Your Ideal Website</h2>
       <p>Whoever is making your website needs<br />to start with the right strategy.</p>
-      <h3>Introducing the 3 S’s of Peak Web Performance™</h3>
+      <h3 class="solution-sub-header">Introducing the 3 S’s of Peak Web Performance™</h3>
       <div class="row-card">
         <div class="card">
           <img class="card-icon" src="eye.svg" alt="icon">
@@ -108,7 +108,7 @@
           </ul>
           <div class="consult-btn-row">
             <a href="free.html" class="btn btn-consult">Yes, I Need Help</a>
-            <a href="#" class="btn btn-consult btn-no">No, Put Dreams On Hold</a>
+            <a href="/" class="btn btn-consult btn-no">No, Put Dreams On Hold</a>
           </div>
         </div>
         <div class="consult-section">
@@ -119,7 +119,7 @@
   </div>
   <div class="block block-bonus">
     <div class="container">
-      <h3>Bonus: for a limited time, I am doing free mockups!</h3>
+      <h3>Free bonus: basic mockup (or preliminary design) for your next website!</h3>
     </div>
   </div>
   <footer>
@@ -131,5 +131,25 @@
       <li><a href="terms.html">Terms</a></li>
     </ul>
   </footer>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script>
+    $( document ).ready(function() {
+      $(".roles").hover(
+        function() {
+          $(this).fadeOut(500, function() {
+            $(this).text("Purveyor of Spectacle").fadeIn(300);
+          });
+        },
+        function() {
+          $(this).fadeOut(500, function() {
+            $(this).text("Web Developer × Designer").fadeIn(300);
+          });
+        }
+      );
+    });
+  </script>
 </body>
 </html>
