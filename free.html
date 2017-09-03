@@ -4,45 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Free Consultation - Yoon, Creator of Websites</title>
-  <link href="https://fonts.googleapis.com/css?family=Jura:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jura:700|Libre+Baskerville:400i|Open+Sans:400,600,800" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1><a href="index.html">Yoon</a></h1>
-    <nav>
+    <div class="header-top">
+      <h1 class="brand"><a href="index.html">Yoon</a></h1>
+      <p class="brand-sub">creator of websites</p>
+      <a class="btn btn-free" href="free.html">Free Consultation</a>
+    </div>
+    <nav class="header-bot">
       <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="free.html">Free Consultation</a></li>
+        <li class="nav-links"><a href="about.html">About</a></li>
+        <li class="nav-links"><a href="portfolio.html">Portfolio</a></li>
+        <li class="nav-links"><a href="services.html">Services</a></li>
       </ul>
     </nav>
   </header>
-  <div class="block">
-    <h2>Free Consultation</h2>
-    <p>Get the answers you need by chatting with a web expert today</p>
-    <p>Schedule a quick 30-minute consultation to get you going on your website woes.</p>
-    <p>We’ll cover</p>
-    <ul>
-      <li>Yoon’s Website Checklist™</li>
-      <li>Overview of the entire development process</li>
-      <li>How long the process usually takes</li>
-      <li>Industry pricing information and technical costs</li>
-      <li>Your project-specific concerns</li>
-      <li>Any other questions you may have</li>
-    </ul>
+  <div class="block block-free">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="row-section">
+        <div class="consult-section consult-section-copy">
+          <h3 class="contact-message">Hey, get in touch with <span class="name-contact">Yoon</span>!</h3>
+          <div class="contact-options">
+            <h4>A) Call <a class="contact-info" href="tel:1-310-694-2316">(310) 694-2316</a> <span class="or">or</span></h4>
+            <h4>B) Email <a class="contact-info" href="mailto:himynameisyoon@gmail.com">himynameisyoon@gmail.com</a> <span class="or">or</span></h4>
+            <h4>C) Fill out this form:</h4>
+            <form class="form-container" action="https://formspree.io/himynameisyoon@gmail.com"
+                  method="POST">
+                <input class="free-name-input" type="text" placeholder="Name" name="name">
+                <input class="free-email-input" type="email" placeholder="Email" name="_replyto">
+                <textarea class="free-message-input" rows="4" placeholder="Message" name="message"></textarea>
+                <input class="btn free-submit-btn" type="submit" value="Send Message">
+            </form>
+          </div>
+        </div>
+        <div class="consult-section consult-img-section">
+          <img class="consult-img" src="Apple iPhone 7 Silver.png" alt="iphone">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="block">
-    <h3>Free bonus: preliminary design for your website</h3>
-    <p>Reach out to me for a free basic mockup of your website idea! Offer is valid as long as Yoon has enough time.</p>
+  <div class="block block-bonus">
+    <div class="container">
+      <h3>Bonus: for a limited time, I am doing free mockups!</h3>
+    </div>
   </div>
 
   <footer>
-    <h1><a href="index.html">Yoon</a></h1>
-    <p>Creator of Websites</p>
-    <p>Copyright © 2017 Yoon Lee. All rights reserved.</p>
+    <h1 class="brand"><a href="index.html">Yoon</a></h1>
+    <p class="brand-sub">creator of websites</p>
+    <small class="copy">Copyright © 2017 Yoon Lee. All rights reserved.</small>
     <ul>
       <li><a href="privacy.html">Privacy</a></li>
       <li><a href="terms.html">Terms</a></li>
