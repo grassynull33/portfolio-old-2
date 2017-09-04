@@ -22,9 +22,9 @@
       </ul>
     </nav>
   </header>
-  <div class="block block-main">
+  <div class="block block-main" style="background-image: url(macbook.png);">
     <div class="container">
-      <h2>Hi, my name is <span class="name">Yoon</span>,<br />and I build premium websites.</h2>
+      <h2 class="main-header">Hi, my name is <span class="name">Yoon</span>,<br />and I build premium websites.</h2>
       <p class="roles">Web Developer &times; Designer</p>
      <!--  <p class="roles">Purveyor of Spectacle</p> -->
     </div>
@@ -57,7 +57,7 @@
     <div class="container">
       <h2>Your Ideal Website</h2>
       <p>Whoever is making your website needs<br />to start with the right strategy.</p>
-      <h3 class="solution-sub-header">Introducing the 3 S’s of Peak Web Performance™</h3>
+      <h3 class="solution-sub-header">Introducing the <span class="jura-font">3 S'<span class="lowercase">s</span> of Peak Web Performance™</span></h3>
       <div class="row-card">
         <div class="card">
           <img class="card-icon" src="eye.svg" alt="icon">
@@ -99,11 +99,11 @@
           <h3 class="contact-message-home">Schedule a quick 30-minute consultation with a web expert</h3>
           <h3 class="contact-message-home">We’ll cover...</h3>
           <ul>
-            <li>Tips and tricks (to save you time and energy)</li>
-            <li>Yoon’s Website Checklist™ (don't miss the little things)</li>
-            <li>Overview of the entire process (get a sense of the big picture)</li>
-            <li>How long the process usually takes (when to expect the final result)</li>
-            <li>Pricing information and technical costs (compare with other options)</li>
+            <li>Tips and tricks <span class="libre-font">(save time and energy)</span></li>
+            <li>Yoon’s Website Checklist™ <span class="libre-font">(don't miss the little things)</span></li>
+            <li>Overview of the entire process <span class="libre-font">(get a sense of the big picture)</span></li>
+            <li>How long the process usually takes <span class="libre-font">(when to expect the final result)</span></li>
+            <li>Pricing information and technical costs <span class="libre-font">(compare with other options)</span></li>
             <li>Any other questions you might have</li>
           </ul>
           <div class="consult-btn-row">
@@ -119,7 +119,7 @@
   </div>
   <div class="block block-bonus">
     <div class="container">
-      <h3>Free bonus: basic mockup (or preliminary design) for your next website!</h3>
+      <h3><span class="jura-font">Free bonus:</span> Basic Mockup for your next website!</h3>
     </div>
   </div>
   <footer>
@@ -135,16 +135,17 @@
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
   <script>
     $( document ).ready(function() {
       $(".roles").hover(
         function() {
-          $(this).fadeOut(500, function() {
+          $(this).fadeOut(300, function() {
             $(this).text("Purveyor of Spectacle").fadeIn(300);
           });
         },
         function() {
-          $(this).fadeOut(500, function() {
+          $(this).fadeOut(300, function() {
             $(this).text("Web Developer × Designer").fadeIn(300);
           });
         }
